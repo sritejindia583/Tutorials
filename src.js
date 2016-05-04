@@ -8,6 +8,8 @@
 	var gem = {
 		name: 'Decahedron',
 		price: 2.95,
-		description: 'this is original description.this is original descriptionthis is original descriptionthis is original descriptionthis is original description'
+		description: 'this is original description.this is original descriptionthis is original descriptionthis is original descriptionthis is original description',
+		canPurchase: true,
+		isSold: false
 	}
 })();

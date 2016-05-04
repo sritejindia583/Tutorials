@@ -7,10 +7,13 @@
 		<script type="text/javascript" src="angular.min.js"></script>
 		<script type="text/javascript" src="src.js"></script>
 		
-		<section ng-controller="StoreController as store">
+		<section ng-controller="StoreController as store" ng-hide="store.product.isSold"> 
+		<!--if isSold is set to true then this item will be hidden-->
 			<h1>{{store.product.name}}</h1>
 			<h2>${{store.product.price}}</h2>
 			<p>{{store.product.description}}</p>
+			<button ng-show="store.product.canPurchase">Add to cart</button>
+			<!--if canPurchase is set to false, then add to cart button will not be shown-->
 		</section>
 
 	</body>
