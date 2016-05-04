@@ -1,9 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="store">
 	<head>
 		<link rel="stylesheet" type="text/css" href="bootstrap-3.3.6-dist/css/bootstrap.min.css"></link>
 	</head>
 	<body>
 		<script type="text/javascript" src="angular.min.js"></script>
+		<script type="text/javascript" src="src.js"></script>
+		
+		<section ng-controller="StoreController as store">
+			<h1>{{store.product.name}}</h1>
+			<h2>${{store.product.price}}</h2>
+			<p>{{store.product.description}}</p>
+		</section>
+
 	</body>
 </html>
